@@ -16,6 +16,10 @@
 
 This is the broadest product demo in the portfolio. It shows how complex operational questions can be turned into a clean dashboard structure without exposing internal company material.
 
+## Preview
+
+![Analytics and operations dashboard demo](assets/dashboard-home.png)
+
 ## Positioning
 
 This project can be described as a multi-module analytics and operations dashboard demo. It highlights how complex business questions can be translated into a clear interface with metrics, filters, investigation views, workflow helpers, and validation tooling.
