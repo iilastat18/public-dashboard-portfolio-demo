@@ -20,7 +20,7 @@
 
 This project can be described as a multi-module analytics and operations dashboard demo. It highlights how complex business questions can be translated into a clear interface with metrics, filters, investigation views, workflow helpers, and validation tooling.
 
-## Main Modules
+## Highlights
 
 - Performance monitoring dashboard
 - Exception review and anomaly tracking
@@ -29,7 +29,7 @@ This project can be described as a multi-module analytics and operations dashboa
 - Optimization and scenario analysis
 - Universe explorer and coverage review
 
-## Skills this demo showcases
+## What It Shows
 
 - Dashboard information architecture
 - KPI design and metric storytelling
@@ -43,7 +43,7 @@ This project can be described as a multi-module analytics and operations dashboa
 
 All metrics, entities, and workflows in this repo are synthetic. The project is designed to demonstrate dashboard structure, information hierarchy, and workflow-oriented analytics design without exposing proprietary material.
 
-## Quick start
+## Quick Start
 
 ```bash
 python3 -m venv .venv
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Included starter files
+## Project Structure
 
 - `app.py`: multipage Streamlit landing page with overview, snapshot tables, and navigation links
 - `pages/0_Portfolio_Cover.py`: screenshot-friendly cover page for README or portfolio hero images
