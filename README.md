@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Public Dashboard Portfolio Demo</h1>
-  <p><strong>A privacy-safe multi-module analytics dashboard rebuilt with synthetic data and portfolio-safe product framing.</strong></p>
+  <p><strong>A privacy-safe multi-module analytics dashboard built with synthetic data and generic product framing.</strong></p>
   <p>Designed to showcase dashboard architecture, metric storytelling, workflow support, and internal-tool product thinking.</p>
 </div>
 
@@ -12,26 +12,22 @@
   <code>product thinking</code>
 </p>
 
-## Portfolio Role
-
-This is the broadest product demo in the portfolio. It shows how complex operational questions can be turned into a clean dashboard structure without exposing internal company material.
-
 ## Preview
 
 ![Analytics and operations dashboard demo](assets/dashboard-home.png)
 
-## Positioning
+## Overview
 
 This project can be described as a multi-module analytics and operations dashboard demo. It highlights how complex business questions can be translated into a clear interface with metrics, filters, investigation views, workflow helpers, and validation tooling.
 
-## Suggested public scope
+## Main Modules
 
 - Performance monitoring dashboard
 - Exception review and anomaly tracking
 - Data quality and validation views
+- Operations workflow support
 - Optimization and scenario analysis
-- Import and export utilities
-- Operations playbook or workflow support page
+- Universe explorer and coverage review
 
 ## Skills this demo showcases
 
@@ -43,9 +39,9 @@ This project can be described as a multi-module analytics and operations dashboa
 - Streamlit-based internal tooling design
 - Plotly and table-based reporting patterns
 
-## Privacy note
+## Data Note
 
-This public version should be independently rebuilt. Do not copy internal code, screenshots, data files, field names, or workflow text directly from the company project. Use synthetic or public data and rename all business-specific concepts into generic portfolio-safe language.
+All metrics, entities, and workflows in this repo are synthetic. The project is designed to demonstrate dashboard structure, information hierarchy, and workflow-oriented analytics design without exposing proprietary material.
 
 ## Quick start
 
@@ -66,59 +62,22 @@ streamlit run app.py
 - `pages/4_Operations_Workflow.py`: workflow board with SLA risk and handoff lanes
 - `pages/5_Optimization_And_Validation.py`: scenario analysis, validation windows, and allocation mix
 - `pages/6_Universe_Explorer.py`: searchable universe explorer with coverage and readiness views
-- `src/demo_content.py`: public-safe product framing and module descriptions
+- `src/demo_content.py`: module descriptions and product copy
 - `src/mock_data.py`: deterministic synthetic datasets for the demo
 - `src/dashboard_ui.py`: shared design system helpers and styling
 - `docs/PRODUCT_STRUCTURE.md`: public-facing product structure map
-- `docs/PORTFOLIO_COPY.md`: ready-to-use portfolio text
-- `docs/SAFE_REBUILD_CHECKLIST.md`: pre-publish safety checklist
+- `docs/PORTFOLIO_COPY.md`: example project summary copy
+- `docs/SAFE_REBUILD_CHECKLIST.md`: publishing checklist
 
-## Suggested repo name
-
-- `analytics-ops-dashboard-demo`
-- `interactive-analytics-dashboard`
-- `portfolio-dashboard-demo`
-
-## Suggested public module set
-
-If you want to keep expanding the public demo, these are good portfolio-safe modules to build around:
-
-- Performance Monitoring
-- Exception Review
-- Data Quality
-- Operations Workflow
-- Optimization And Validation
-- Universe Explorer
-
-## Suggested tech stack section
-
-You can adapt this depending on what you want to show publicly:
+## Stack
 
 - Python
 - Streamlit
-- Pandas or Polars
+- Pandas
 - Plotly
-- DuckDB
-- Synthetic CSV or Parquet datasets
+- Synthetic datasets
 
-## Ready-to-use short description
+## Notes
 
-Built a privacy-safe multi-module analytics dashboard demo focused on KPI monitoring, anomaly investigation, data validation, and workflow support. The public version is independently rebuilt with synthetic data and generic business terminology.
-
-## Screenshot Strategy
-
-- lead with `pages/0_Portfolio_Cover.py` for the README hero image
-- use one screenshot of the KPI / monitoring page
-- use one screenshot of the validation or workflow page
-- keep screenshots focused on layout, hierarchy, and product feel rather than dense tables only
-
-## Next steps
-
-1. Rebuild only the UI and logic patterns you personally want to showcase.
-2. Replace all company-specific names, labels, and workflows.
-3. Use mock or public datasets only.
-4. Add screenshots from the rebuilt public version, not the internal one.
-
-## Screenshot tip
-
-Open `pages/0_Portfolio_Cover.py` in the running app when you want a clean screenshot for your GitHub README.
+- The app focuses on dashboard structure, information hierarchy, and workflow-oriented analytics design.
+- All data and business labels are generic and synthetic.
