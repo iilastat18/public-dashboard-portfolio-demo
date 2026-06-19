@@ -1,8 +1,20 @@
-# Public Dashboard Portfolio Demo
+<div align="center">
+  <h1>Public Dashboard Portfolio Demo</h1>
+  <p><strong>A privacy-safe multi-module analytics dashboard rebuilt with synthetic data and portfolio-safe product framing.</strong></p>
+  <p>Designed to showcase dashboard architecture, metric storytelling, workflow support, and internal-tool product thinking.</p>
+</div>
 
-This folder is a privacy-safe starting point for turning internal dashboard experience into a public portfolio project.
+<p align="center">
+  <code>dashboard design</code>
+  <code>operations analytics</code>
+  <code>synthetic data</code>
+  <code>streamlit app</code>
+  <code>product thinking</code>
+</p>
 
-The goal is to present strong product, analytics, and dashboard-building skills without exposing company code, internal workflows, proprietary terminology, or sensitive data.
+## Portfolio Role
+
+This is the broadest product demo in the portfolio. It shows how complex operational questions can be turned into a clean dashboard structure without exposing internal company material.
 
 ## Positioning
 
@@ -88,6 +100,13 @@ You can adapt this depending on what you want to show publicly:
 ## Ready-to-use short description
 
 Built a privacy-safe multi-module analytics dashboard demo focused on KPI monitoring, anomaly investigation, data validation, and workflow support. The public version is independently rebuilt with synthetic data and generic business terminology.
+
+## Screenshot Strategy
+
+- lead with `pages/0_Portfolio_Cover.py` for the README hero image
+- use one screenshot of the KPI / monitoring page
+- use one screenshot of the validation or workflow page
+- keep screenshots focused on layout, hierarchy, and product feel rather than dense tables only
 
 ## Next steps
 
