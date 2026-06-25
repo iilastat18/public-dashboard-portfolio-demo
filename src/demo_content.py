@@ -1,17 +1,17 @@
 from __future__ import annotations
 
 SHORT_DESCRIPTION = (
-    "A privacy-safe dashboard concept inspired by real internship work. "
-    "This public version focuses on KPI monitoring, exception review, "
-    "data validation, workflow support, and scenario analysis without "
-    "reusing internal names, files, or business logic."
+    "A dashboard concept centered on KPI monitoring, exception review, "
+    "data validation, workflow support, and scenario analysis. "
+    "This version focuses on modular analytics pages, generic operating concepts, "
+    "and synthetic datasets."
 )
 
 
 SAMPLE_METRICS = [
     {"label": "Active modules", "value": "10", "delta": "+3 rebuilt"},
     {"label": "Synthetic KPI cards", "value": "24", "delta": "+8 added"},
-    {"label": "Review workflows", "value": "5", "delta": "public-safe"},
+    {"label": "Review workflows", "value": "5", "delta": "multi-step"},
     {"label": "Data sources", "value": "Mock + CSV", "delta": "portfolio-ready"},
 ]
 
@@ -27,7 +27,7 @@ APP_HIGHLIGHTS = [
     },
     {
         "title": "Safe public storytelling",
-        "body": "Present the same problem-solving strength using synthetic data and renamed modules that do not reveal internal workflows.",
+        "body": "Present the same problem-solving strength using synthetic data and renamed modules that read clearly to an external audience.",
     },
 ]
 
@@ -117,7 +117,7 @@ MODULE_GROUPS = [
 ]
 PRIVACY_PRINCIPLES = [
     "Do not copy internal screenshots, data files, cache outputs, or exact workflow text.",
-    "Rename modules so that an external reader cannot infer the original company process.",
+    "Rename modules so the product structure reads clearly to an external audience.",
     "Use synthetic or public datasets only, even when the internal structure feels reusable.",
     "Rewrite logic independently instead of editing exported internal code.",
     "Avoid internal abbreviations, hostnames, channel names, and compliance references.",

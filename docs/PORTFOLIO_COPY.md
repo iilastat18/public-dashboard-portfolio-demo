@@ -6,19 +6,18 @@
 
 ## English portfolio version
 
-This project is a privacy-safe dashboard demo inspired by real-world internship work. It showcases how I designed a multi-module analytics and operations platform that brings together KPI monitoring, anomaly investigation, data validation, interactive filtering, and workflow support in a single interface. The public version is independently rebuilt with synthetic or public data, renamed modules, and restructured logic, and does not contain internal company code, workflows, or proprietary information.
+This project is a dashboard demo inspired by analytics and operations work. It showcases a multi-module platform that brings together KPI monitoring, anomaly investigation, data validation, interactive filtering, and workflow support in a single interface.
 
 ## GitHub About line
 
-Built a privacy-safe analytics and operations dashboard demo for KPI tracking, anomaly review, validation workflows, and interactive business reporting.
+Built an analytics and operations dashboard demo for KPI tracking, anomaly review, validation workflows, and interactive business reporting.
 
 ## Resume bullet ideas
 
 - Designed and built a multi-module analytics dashboard for KPI monitoring, anomaly investigation, and operational reporting.
 - Translated complex business questions into interactive dashboard flows with metrics, filters, drill-down views, and validation tools.
-- Rebuilt a public-facing demo using synthetic data and privacy-safe abstractions to showcase dashboard design and implementation skills.
+- Rebuilt a public-facing demo using synthetic data and modular abstractions to showcase dashboard design and implementation skills.
 
 ## Short interview version
 
-During my internship I worked on dashboard and internal tooling projects, and for my public portfolio I rebuilt the ideas in a privacy-safe way. Instead of reusing internal code or data, I created an independent demo that shows the same types of skills: structuring metrics, designing interactive views, and building tools that help users investigate operational questions more efficiently.
-
+This project reflects the same types of skills: structuring metrics, designing interactive views, and building tools that help users investigate operational questions more efficiently.

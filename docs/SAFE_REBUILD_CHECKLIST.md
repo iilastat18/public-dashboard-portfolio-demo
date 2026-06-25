@@ -13,7 +13,7 @@ Use this checklist before publishing anything to GitHub.
 - Internal workflow steps copied word-for-word
 - Exact alert thresholds or optimization rules tied to the business
 
-## Replace with public-safe versions
+## Replace with generic versions
 
 - Real business labels -> generic module names
 - Real KPIs -> sample or synthetic KPIs
@@ -39,4 +39,3 @@ Ask yourself these questions:
 4. Did I write this version independently enough to stand on its own?
 
 If any answer feels unsafe, remove or rewrite the content before publishing.
-

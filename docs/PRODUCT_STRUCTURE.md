@@ -90,7 +90,7 @@ Show timed response workflows, role split, and communication guidance.
 
 ### Document Intake Assistant
 
-Show OCR or text extraction ideas in a public-safe, generic way.
+Show OCR or text extraction ideas in a generic way.
 
 ## Build guidance
 

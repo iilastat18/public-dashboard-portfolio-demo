@@ -44,8 +44,8 @@ recommended_runs = int((optimizer_df["status"] == "Recommended").sum())
 
 render_page_hero(
     "Analytics And Operations Dashboard Demo",
-    "A richer, portfolio-safe rebuild of a real internal dashboard pattern. The experience now combines KPI tracking, review queues, validation surfaces, operational lanes, universe search, and optimization monitoring in one cohesive product shell.",
-    kicker="Portfolio-safe rebuild",
+    "A richer analytics dashboard demo that combines KPI tracking, review queues, validation surfaces, operational lanes, universe search, and optimization monitoring in one cohesive product shell.",
+    kicker="Portfolio demo",
     pills=["Monitoring", "Exception Review", "Validation", "Workflow", "Universe Search", "Optimization"],
     side_label="Product scope",
     side_value="6 surfaces",
@@ -83,8 +83,8 @@ with upper_left:
         ),
         (
             "Portfolio safety",
-            "All terms, scenarios, and datasets are synthetic and rewritten to showcase skill without exposing company internals.",
-            ["clean-room rebuild", "mock data", "renamed modules"],
+            "All terms, scenarios, and datasets are synthetic and organized for portfolio presentation.",
+            ["synthetic data", "mock data", "renamed modules"],
         ),
     ]
     for col, (title, body, chips) in zip(feature_cols, feature_cards):

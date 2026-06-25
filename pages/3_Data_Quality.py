@@ -87,7 +87,7 @@ tab1, tab2 = st.tabs(["Health Board", "Run History"])
 with tab1:
     left, right = st.columns([1.15, 1])
     with left:
-        render_panel_title("Dataset status board", "A public-safe version of a validation control panel.")
+        render_panel_title("Dataset status board", "A validation control panel for freshness, failures, and review status.")
         status_chart = (
             alt.Chart(filtered)
             .mark_circle(size=240)

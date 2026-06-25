@@ -68,7 +68,7 @@ st.markdown(f"<div class='cover-note'>{note}</div>", unsafe_allow_html=True)
 
 render_page_hero(
     "Analytics Dashboard Portfolio",
-    "A polished, privacy-safe product demo inspired by real internship dashboard work. It combines monitoring, anomaly review, validation, workflow tooling, search, and optimization into one portfolio-ready analytics surface.",
+    "A polished product demo that combines monitoring, anomaly review, validation, workflow tooling, search, and optimization into one portfolio-ready analytics surface.",
     kicker="README cover",
     pills=["Portfolio-safe", "Synthetic data", "Multi-module", "Interview-ready"],
     side_label="Best use",
@@ -156,7 +156,7 @@ bottom_cols = st.columns(3)
 for col, payload in zip(
     bottom_cols,
     [
-        ("Clean-room rebuild", "Everything here is synthetic and renamed. The point is to show product and dashboard skill without revealing company internals.", ["privacy-safe", "independent build"]),
+        ("Synthetic demo", "Everything here is synthetic and organized to highlight product structure, dashboard design, and workflow-oriented analytics.", ["synthetic data", "portfolio demo"]),
         ("Good for screenshots", "This page is intentionally composed so the hero, charts, and cards fit neatly into a GitHub README image crop.", ["hero-ready", "balanced layout"]),
         ("Good for interviews", "You can walk someone from this cover page into monitoring, review, validation, optimization, and search without changing the story.", ["demo flow", "talk track"]),
     ],

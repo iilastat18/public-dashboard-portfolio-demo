@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Public Dashboard Portfolio Demo</h1>
-  <p><strong>A privacy-safe multi-module analytics dashboard built with synthetic data and generic product framing.</strong></p>
+  <p><strong>A multi-module analytics dashboard built with synthetic data and generic product framing.</strong></p>
   <p>Designed to showcase dashboard architecture, metric storytelling, workflow support, and internal-tool product thinking.</p>
 </div>
 
@@ -41,7 +41,7 @@ This project can be described as a multi-module analytics and operations dashboa
 
 ## Data Note
 
-All metrics, entities, and workflows in this repo are synthetic. The project is designed to demonstrate dashboard structure, information hierarchy, and workflow-oriented analytics design without exposing proprietary material.
+All metrics, entities, and workflows in this repo are synthetic. The project focuses on dashboard structure, information hierarchy, and workflow-oriented analytics design.
 
 ## Quick Start
 
