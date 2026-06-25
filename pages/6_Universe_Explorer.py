@@ -5,6 +5,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_filter_shell,
     render_page_hero,
     render_panel_title,
@@ -15,6 +16,11 @@ from src.mock_data import get_universe_records
 
 st.set_page_config(page_title="Universe Explorer", layout="wide")
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="universe_screenshot_mode",
+    inactive_note="Use the sidebar to pick this page, then switch on Screenshot mode to capture the explorer cleanly.",
+    active_note="Screenshot mode is on. This page frames well with the hero, coverage chart, and focused instrument panel.",
+)
 
 df = get_universe_records()
 

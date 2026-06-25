@@ -6,6 +6,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_filter_shell,
     render_page_hero,
     render_panel_title,
@@ -16,6 +17,11 @@ from src.mock_data import get_exception_cases
 
 st.set_page_config(page_title="Exception Review", layout="wide")
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="exception_screenshot_mode",
+    inactive_note="Use the sidebar to reach this page first, then turn on Screenshot mode for a cleaner queue capture.",
+    active_note="Screenshot mode is on. The strongest crop is usually the hero, status breakdown, and case-detail area.",
+)
 
 df = get_exception_cases().copy()
 

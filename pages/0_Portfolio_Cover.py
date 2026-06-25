@@ -3,7 +3,7 @@ from __future__ import annotations
 import altair as alt
 import streamlit as st
 
-from src.dashboard_ui import apply_theme, render_metric_strip, render_page_hero, render_panel_title, render_surface_card
+from src.dashboard_ui import apply_theme, enable_screenshot_mode, render_metric_strip, render_page_hero, render_panel_title, render_surface_card
 from src.mock_data import (
     get_exception_cases,
     get_optimizer_runs,
@@ -19,33 +19,10 @@ st.set_page_config(
     layout="wide",
 )
 apply_theme()
-
-screenshot_mode = st.toggle("Screenshot mode", value=False, help="Hide sidebar and top chrome only when you want to capture the README cover.")
-
-chrome_css = ""
-if screenshot_mode:
-    chrome_css = """
-    [data-testid="stSidebar"], header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecoration"] {
-        display: none !important;
-    }
-    .block-container {
-        padding-top: 0.6rem;
-        max-width: 1280px;
-    }
-    """
-
-st.markdown(
-    f"""
-    <style>
-        {chrome_css}
-        .cover-note {{
-            color: #5f756f;
-            font-size: 0.86rem;
-            margin-bottom: 0.55rem;
-        }}
-    </style>
-    """,
-    unsafe_allow_html=True,
+enable_screenshot_mode(
+    toggle_key="cover_screenshot_mode",
+    inactive_note="Turn on Screenshot mode only when you want to capture a clean README cover.",
+    active_note="README cover mode is on. Capture the hero plus first two rows.",
 )
 
 perf = get_performance_timeseries()
@@ -58,13 +35,6 @@ latest_perf = perf[perf["date"] == perf["date"].max()]
 open_cases = int((exc["status"] != "Resolved").sum())
 recommended = int((optimizer["status"] == "Recommended").sum())
 missing_coverage = int((universe["coverage_status"] == "Missing").sum())
-
-note = (
-    "README cover mode is on. Capture the hero plus first two rows."
-    if screenshot_mode
-    else "Turn on Screenshot mode only when you want to capture a clean README cover."
-)
-st.markdown(f"<div class='cover-note'>{note}</div>", unsafe_allow_html=True)
 
 render_page_hero(
     "Analytics Dashboard Portfolio",

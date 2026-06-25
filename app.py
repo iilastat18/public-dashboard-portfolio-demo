@@ -5,6 +5,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_metric_strip,
     render_page_hero,
     render_panel_title,
@@ -27,6 +28,11 @@ st.set_page_config(
     layout="wide",
 )
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="home_screenshot_mode",
+    inactive_note="Turn on Screenshot mode after you land on the page you want to capture.",
+    active_note="Screenshot mode is on. Capture the main hero, metric strip, and whichever module section you want to feature.",
+)
 
 performance_df = get_performance_timeseries()
 exception_df = get_exception_cases()

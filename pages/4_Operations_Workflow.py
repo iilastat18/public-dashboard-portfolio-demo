@@ -4,6 +4,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_filter_shell,
     render_page_hero,
     render_panel_title,
@@ -14,6 +15,11 @@ from src.mock_data import get_workflow_items
 
 st.set_page_config(page_title="Operations Workflow", layout="wide")
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="workflow_screenshot_mode",
+    inactive_note="Move to this subpage with the sidebar first, then turn on Screenshot mode for the final capture.",
+    active_note="Screenshot mode is on. Try capturing the hero, owner-capacity summary, and lane board together.",
+)
 
 df = get_workflow_items().copy()
 

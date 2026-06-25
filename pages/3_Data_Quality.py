@@ -6,6 +6,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_filter_shell,
     render_page_hero,
     render_panel_title,
@@ -16,6 +17,11 @@ from src.mock_data import get_quality_checks, get_quality_run_history
 
 st.set_page_config(page_title="Data Quality", layout="wide")
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="quality_screenshot_mode",
+    inactive_note="Open the page you want first, then switch on Screenshot mode right before capturing.",
+    active_note="Screenshot mode is on. This page usually looks best with the hero and Health Board tab in frame.",
+)
 
 checks = get_quality_checks().copy()
 history = get_quality_run_history()

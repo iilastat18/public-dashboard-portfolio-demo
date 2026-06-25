@@ -299,6 +299,11 @@ def apply_theme() -> None:
                 border-color: rgba(31, 119, 99, 0.28);
                 color: var(--accent);
             }
+            .capture-note {
+                color: #5f756f;
+                font-size: 0.86rem;
+                margin: 0.15rem 0 0.8rem;
+            }
             .stMultiSelect, .stSelectbox, .stTextInput, .stSlider {
                 background: transparent;
             }
@@ -370,6 +375,44 @@ def apply_theme() -> None:
         """,
         unsafe_allow_html=True,
     )
+
+
+def enable_screenshot_mode(
+    *,
+    toggle_key: str,
+    inactive_note: str,
+    active_note: str | None = None,
+) -> bool:
+    screenshot_mode = st.toggle(
+        "Screenshot mode",
+        value=False,
+        key=toggle_key,
+        help="Hide the sidebar and Streamlit chrome when you want a clean screenshot.",
+    )
+    note = active_note if screenshot_mode and active_note is not None else inactive_note
+    st.markdown(f"<div class='capture-note'>{note}</div>", unsafe_allow_html=True)
+
+    if screenshot_mode:
+        st.markdown(
+            """
+            <style>
+                [data-testid="stSidebar"],
+                header[data-testid="stHeader"],
+                [data-testid="stToolbar"],
+                [data-testid="stDecoration"],
+                button[title="View fullscreen"] {
+                    display: none !important;
+                }
+                .block-container {
+                    padding-top: 0.6rem;
+                    max-width: 1280px;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    return screenshot_mode
 
 
 def render_metric_strip(items: list[dict[str, str]]) -> None:

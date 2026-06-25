@@ -6,6 +6,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_filter_shell,
     render_page_hero,
     render_panel_title,
@@ -16,6 +17,11 @@ from src.mock_data import get_allocation_mix, get_optimizer_runs, get_validation
 
 st.set_page_config(page_title="Optimization And Validation", layout="wide")
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="optimization_screenshot_mode",
+    inactive_note="Navigate here first, then turn on Screenshot mode when you are ready to frame the frontier and validation panels.",
+    active_note="Screenshot mode is on. The best crop here is usually the hero with the frontier and walk-forward panels.",
+)
 
 runs = get_optimizer_runs()
 windows = get_validation_windows()

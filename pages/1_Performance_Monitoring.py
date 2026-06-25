@@ -6,6 +6,7 @@ import streamlit as st
 
 from src.dashboard_ui import (
     apply_theme,
+    enable_screenshot_mode,
     render_filter_shell,
     render_page_hero,
     render_panel_title,
@@ -16,6 +17,11 @@ from src.mock_data import get_performance_timeseries
 
 st.set_page_config(page_title="Performance Monitoring", layout="wide")
 apply_theme()
+enable_screenshot_mode(
+    toggle_key="performance_screenshot_mode",
+    inactive_note="Navigate here normally, then turn on Screenshot mode when you want a clean product shot.",
+    active_note="Screenshot mode is on. This page is best captured from the hero through the trend and leaderboard sections.",
+)
 
 df = get_performance_timeseries()
 
