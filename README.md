@@ -16,6 +16,19 @@
 
 ![Analytics and operations dashboard demo](assets/dashboard-home.png)
 
+<p align="center">
+  <img src="assets/dashboard-performance.png" width="49%" alt="Performance monitoring page" />
+  <img src="assets/dashboard-exception-review.png" width="49%" alt="Exception review page" />
+</p>
+<p align="center">
+  <img src="assets/dashboard-data-quality.png" width="49%" alt="Data quality page" />
+  <img src="assets/dashboard-operations-workflow.png" width="49%" alt="Operations workflow page" />
+</p>
+<p align="center">
+  <img src="assets/dashboard-optimization-validation.png" width="49%" alt="Optimization and validation page" />
+  <img src="assets/dashboard-universe-explorer.png" width="49%" alt="Universe explorer page" />
+</p>
+
 ## Overview
 
 This project can be described as a multi-module analytics and operations dashboard demo. It highlights how complex business questions can be translated into a clear interface with metrics, filters, investigation views, workflow helpers, and validation tooling.
